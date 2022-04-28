@@ -18,8 +18,8 @@ public class Equals extends Object {
     public boolean equals(Object obj) {
         System.out.println("Comparando " + this.getClass() + " con " + obj.getClass());
         if (obj instanceof Equals) {
-            return this.equals((Equals) obj);
             // If obj is an instance of Equals, it runs the method below
+            return this.equals((Equals) obj);
         } else {
             // If obj is not an instance of Equals, it runs the method from Object superclass
             return super.equals(obj);
