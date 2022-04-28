@@ -1,13 +1,13 @@
-package com.erivas.ClassAndObjects.One;
+package com.erivas.ClassAndObjects.Polymorphism.Equals;
 
 /*
-Dynamic polymorphism is polymorphism that occurs at runtime (during application execution).
+Static polymorphism is polymorphism that occurs at compile time.
 * */
-public class EqualsDynamicPolymorphism {
+public class EqualsStaticPolymorphism {
 
     private final String name;
 
-    public EqualsDynamicPolymorphism(String newName) {
+    public EqualsStaticPolymorphism(String newName) {
         this.name = newName;
     }
 
@@ -15,9 +15,9 @@ public class EqualsDynamicPolymorphism {
     @Override
     public boolean equals(Object obj) {
         System.out.println("Comparing from @Override  " + this.getClass() + " with  " + obj.getClass());
-        if (obj instanceof EqualsDynamicPolymorphism) {
+        if (obj instanceof EqualsStaticPolymorphism) {
             // If obj is an instance of Equals, it runs the method below
-            return this.equals((EqualsDynamicPolymorphism) obj);
+            return this.equals(obj);
         } else {
             // If obj is not an instance of Equals, it runs the method from Object superclass
             return super.equals(obj);
@@ -25,16 +25,16 @@ public class EqualsDynamicPolymorphism {
     }
 
     // Method overloading with another object type as parameter
-    public boolean equals(EqualsDynamicPolymorphism obj) {
+    public boolean equals(EqualsStaticPolymorphism obj) {
         System.out.println("Comparing from 'equals'  " + this.getClass() + " with  " + obj.getClass());
         return this.name.equals(obj.name);
     }
 
     public static void main(String[] args) {
-        EqualsDynamicPolymorphism p1 = new EqualsDynamicPolymorphism("Hola");
-        Object p3 = new EqualsDynamicPolymorphism("Hola");
+        EqualsStaticPolymorphism p1 = new EqualsStaticPolymorphism("Hola");
+        EqualsStaticPolymorphism p2 = new EqualsStaticPolymorphism("Hola");
 
         // Compares if p1 and p2 are the same - SPOILER: Returns true
-        System.out.println("Are p1 and p3 strings the same? " + p1.equals(p3));
+        System.out.println("Are p1 and p2 strings the same? " + p1.equals(p2));
     }
 }

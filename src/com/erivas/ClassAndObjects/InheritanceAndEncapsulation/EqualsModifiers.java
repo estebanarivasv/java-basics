@@ -1,4 +1,4 @@
-package com.erivas.ClassAndObjects.Two;
+package com.erivas.ClassAndObjects.InheritanceAndEncapsulation;
 
 
 public class EqualsModifiers extends SuperClass {

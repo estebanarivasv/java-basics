@@ -1,4 +1,4 @@
-package com.erivas.Polymorphism;
+package com.erivas.ClassAndObjects.Polymorphism.ParentAndChild;
 
 public class Child extends Parent implements BaseInterface {
 	

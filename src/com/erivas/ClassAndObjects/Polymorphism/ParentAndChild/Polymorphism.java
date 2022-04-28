@@ -1,14 +1,14 @@
-package com.erivas.Polymorphism;
+package com.erivas.ClassAndObjects.Polymorphism.ParentAndChild;
 
 public class Polymorphism {
 
 	// Methods overload
 	public void processNumber(Double n) {
-		System.out.println("Me invocaste con un DOUBLE");
+		System.out.println("You have invoked me with a DOUBLE");
 	}
 
 	public void processNumber(Integer n) {
-		System.out.println("Me invocaste con un INTEGER");
+		System.out.println("You have invoked me with a INTEGER");
 	}
 
 	
