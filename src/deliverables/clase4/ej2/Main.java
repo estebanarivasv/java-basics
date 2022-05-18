@@ -6,13 +6,13 @@ Cada Thread muestra la suma resultante cuando finaliza. Utilizar las pausas nece
 el paralelismo.
  */
 
-public class Runner {
+public class Main {
 
     public static void main(String[] args) {
-        Thread evenNumbersThread = new Thread(new EvenNumbersThread());
-        Thread oddNumbersThread = new Thread(new OddNumbersThread());
+        Thread threadNrosPares = new Thread(new ThreadNrosPares());
+        Thread threadNrosImpares = new Thread(new ThreadNrosImpares());
 
-        evenNumbersThread.start();
-        oddNumbersThread.start();
+        threadNrosPares.start();
+        threadNrosImpares.start();
     }
 }

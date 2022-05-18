@@ -3,7 +3,7 @@ package deliverables.clase4.ej2;
 import java.util.concurrent.TimeUnit;
 
 // imprima impares (1 al 10) y calcula la suma
-public class OddNumbersThread implements Runnable {
+public class ThreadNrosImpares implements Runnable {
 
     @Override
     public void run() {

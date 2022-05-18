@@ -3,7 +3,7 @@ package deliverables.clase4.ej1;
 import java.util.concurrent.TimeUnit;
 
 // Mostrar los numeros del 1 al 20 con un retardo de 3 segundos entre cada numero
-public class ThreadOfNumbers extends Thread {
+public class ThreadNumeros extends Thread {
 
     @Override
     public void run() {
@@ -19,8 +19,8 @@ public class ThreadOfNumbers extends Thread {
     }
 
     public static void main(String[] args) {
-        ThreadOfNumbers numbersThread = new ThreadOfNumbers();
+        ThreadNumeros numbersThread = new ThreadNumeros();
         numbersThread.start();
-        System.out.println("ThreadOfNumbers finalizó la ejecución.");
+        System.out.println("ThreadNumeros finalizó la ejecución.");
     }
 }
