@@ -67,13 +67,12 @@ Procesar dicho arreglo con un stream, quitando los duplicados y clasificando las
 
 8. Este último ejercicio lo pongo sobre la mesa para que lo veamos juntos ya que se basa en uso avanzado de Lambdas.
 
-Supongamos que quiero utilizar una interface funcional que realice lo siguiente f(x, y) = 2*x + 3*y. 
-Tengo 2 opciones, implemento mi Interface Funcional que va a estar lista para acoplar con el lambda o utilizo BIFunction que es similar a Funcion pero acepta 2 parámetros, justo lo que necesito. 
+   1. Supongamos que quiero utilizar una interface funcional que realice lo siguiente f(x, y) = 2*x + 3*y. 
+   Tengo 2 opciones, implemento mi Interface Funcional que va a estar lista para acoplar con el lambda o utilizo BIFunction que es similar a Funcion pero acepta 2 parámetros, justo lo que necesito. 
+   Quiero que implementen ambos casos, incluso, igualando contra el lambda pero previamente desarrollando la clase abstracta para comparar ambos funcionamientos.
     
-Quiero que implementen ambos casos, incluso, igualando contra el lambda pero previamente desarrollando la clase abstracta para comparar ambos funcionamientos.
-    
-Ahora compliquemos un poco la situación:  Utilicemos Function.  Con esto vamos a estar aplicando el concepto de Currying (investigen Currying) que es bastante común en los lenguajes puramente funcionales y que también es posible en java (con un poco de esfuerzo)
-Y finalmente, para que no se aburran, implementemos con Function un interface capaz de recibir un lamba de haga esto f(x, y, z) = 2*x + 3*y + 4*z
-Que las interfaces utilicen Long
-Importante, cuando hablamos de desarrollar una Interface es definir como será el tipo del parámetro que reciba dicho lamba en un metodo que lo utilice.  Ej:  debemos tener un metodo eval(Function f, Long ... parametros), este metodo obtendrá el resultado en base al lambda que le estamos pasando y los parametros, por supuesto.
+   2. Ahora compliquemos un poco la situación:  Utilicemos Function.  Con esto vamos a estar aplicando el concepto de Currying (investigen Currying) que es bastante común en los lenguajes puramente funcionales y que también es posible en java (con un poco de esfuerzo)
+   Y finalmente, para que no se aburran, implementemos con Function un interface capaz de recibir un lamba de haga esto f(x, y, z) = 2*x + 3*y + 4*z
+   Que las interfaces utilicen Long
+   Importante, cuando hablamos de desarrollar una Interface es definir como será el tipo del parámetro que reciba dicho lamba en un metodo que lo utilice.  Ej:  debemos tener un metodo eval(Function f, Long ... parametros), este metodo obtendrá el resultado en base al lambda que le estamos pasando y los parametros, por supuesto.
 
